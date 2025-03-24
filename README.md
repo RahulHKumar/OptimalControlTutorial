@@ -27,8 +27,7 @@ Algorithms implemented:
 
 ## Chapter 3: Sampling based methods
 
-Sampling-based planning algorithms like **PRM**, **RRT**, and their optimal variants (**PRM\***, **RRT\***), build paths by randomly sampling the space rather than searching over a fixed grid. They efficiently handle high-dimensional or continuous spaces where grid-based methods become computationally expensive or infeasible.  
-While PRM builds a global roadmap and RRT grows a tree from the start.
+Sampling-based planning algorithms like **PRM**, **RRT**, and their optimal variants (**PRM\***, **RRT\***), build paths by randomly sampling the space rather than searching over a fixed grid. They efficiently handle high-dimensional or continuous spaces where grid-based methods become computationally expensive or infeasible. PRM builds a global roadmap and RRT grows a tree from the start.
 
 While **RRT\*** finds optimal paths in configuration space but often ignores system dynamics, making it unsuitable for real robots with motion constraints. **Kinodynamic RRT\*** addresses this by incorporating **dynamics and differential constraints**, generating dynamically feasible trajectories. **LQR-RRT\*** further improves performance by using **Linear Quadratic Regulator (LQR)** for local steering, leading to smoother, lower-cost paths and better control-aware exploration. We consider a unicycle model for kinodynamic RRT* and double integrator for LQR-RRT* in this tutorial. This section also introduces the use of **cvxpy**.
 
@@ -47,7 +46,9 @@ This section implements:
 Now, the most important part of this tutorial - what is optimization? Check out the [notebook](Casadi_MPC_tutorial.ipynb) for step by step explanation of what is MPC? This section also introduces the use of **Casadi**.
 
 **Optimization-based techniques** like **Model Predictive Control (MPC)** compute control actions by solving a constrained optimization problem at each timestep. They account for system dynamics, future goals, and input/state constraints, enabling **predictive and constraint-aware** decision making. We also simulate a 2D lidar in matplotlib using Bresenham's algorithm, K-Means Clustering and DBSCAN clustering.
+
 ![alt text](https://github.com/RahulHKumar/Robot-Planning-and-Control/blob/main/results/mpc_dc_simulation.gif)
 
 **MPC-CBF** further enhances this by incorporating **Control Barrier Functions (CBFs)** for formal **safety guarantees**, ensuring collision avoidance and constraint satisfaction even in dynamic environments.
+
 ![alt text](https://github.com/RahulHKumar/Robot-Planning-and-Control/blob/main/results/mpccbfres.jpg)
