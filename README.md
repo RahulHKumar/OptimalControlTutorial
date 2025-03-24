@@ -43,7 +43,7 @@ This section implements:
 
 ## Chapter 4: Optimization
 
-Now, the most important part of this tutorial - what is optimization? Check out the [notebook](Casadi_MPC_tutorial.ipynb) for step by step explanation of what is MPC? This section also introduces the use of **Casadi**.
+Now, the **most important part of this tutorial!**. What is optimization? Check out the [notebook](Casadi_MPC_tutorial.ipynb) for step by step explanation of what is MPC? This section also introduces the use of **Casadi**.
 
 **Optimization-based techniques** like **Model Predictive Control (MPC)** compute control actions by solving a constrained optimization problem at each timestep. They account for system dynamics, future goals, and input/state constraints, enabling **predictive and constraint-aware** decision making. We also simulate a 2D lidar in matplotlib using Bresenham's algorithm, K-Means Clustering and DBSCAN clustering.
 
