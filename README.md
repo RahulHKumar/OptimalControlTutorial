@@ -1,5 +1,5 @@
 # A peak into Robot Planning and Control
-This notebook serves as an introductory guide to planning and control algorithms commonly used in robotics. We begin with state estimation—not a planning or control technique per se, but a fundamental prerequisite for building autonomous systems. Next, we explore grid-based planners such as A* and Uniform Cost Search (UCS), followed by the implementation of a PID controller to enable the robot to follow planned waypoints. We then transition into sampling-based planning algorithms, and gradually delve into optimal control methods ranging from Quadratic Programming (QP) to Model Predictive Control (MPC) and MPC with Control Barrier Functions (MPC-CBF), which are widely used in autonomous robotics. This tutorial is designed to be accessible for beginners and also introduces powerful optimization libraries like cvxpy and CasADi.
+This notebook serves as an introductory guide to planning and control algorithms commonly used in robotics. We begin with state estimation — not a planning or control technique per se, but a fundamental prerequisite for building autonomous systems. Next, we explore grid-based planners such as A* and Uniform Cost Search (UCS), followed by the implementation of a PID controller to enable the robot to follow planned waypoints. We then transition into sampling-based planning algorithms, and gradually delve into optimal control methods ranging from Quadratic Programming (QP) to Model Predictive Control (MPC) and MPC with Control Barrier Functions (MPC-CBF), which are widely used in autonomous robotics. This tutorial is designed to be accessible for beginners and also introduces powerful optimization libraries like cvxpy and CasADi.
 
 ## Chapter 1: State estiation using Gaussian Estimators
 
@@ -41,3 +41,13 @@ This section implements:
 - [x] RRT*
 - [x] Kinodynamic RRT*
 - [x] LQR-RRT*
+
+## Chapter 4: Optimization
+
+Now, the most important part of this tutorial - what is optimization? Check out the [notebook](Casadi_MPC_tutorial.ipynb) for step by step explanation of what is MPC? This section also introduces the use of **Casadi**.
+
+**Optimization-based techniques** like **Model Predictive Control (MPC)** compute control actions by solving a constrained optimization problem at each timestep. They account for system dynamics, future goals, and input/state constraints, enabling **predictive and constraint-aware** decision making. We also simulate a 2D lidar in matplotlib using Bresenham's algorithm, K-Means Clustering and DBSCAN clustering.
+![alt text](https://github.com/RahulHKumar/Robot-Planning-and-Control/blob/main/results/mpc_dc_simulation.gif)
+
+**MPC-CBF** further enhances this by incorporating **Control Barrier Functions (CBFs)** for formal **safety guarantees**, ensuring collision avoidance and constraint satisfaction even in dynamic environments.
+![alt text](https://github.com/RahulHKumar/Robot-Planning-and-Control/blob/main/results/mpccbfres.jpg)
