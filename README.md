@@ -3,7 +3,11 @@ This notebook serves as an introductory guide to planning and control algorithms
 
 ## Chapter 1: State estiation using Gaussian Estimators
 
-Algorithms implemented
+State estimation helps robots infer their true state (like position or velocity) from noisy sensor data. Kalman Filter (KF) is optimal for linear systems with Gaussian noise, combining prediction and correction. EKF and UKF extend KF to nonlinear systems—EKF uses linearization, while UKF uses sigma points for better accuracy.
+
+Algorithms implemented:
 - [x] Kalman Filter
 - [x] Extended Kalman Filter
 - [ ] Unscented Kalman Filter
+
+![alt text](https://github.com/RahulHKumar/Robot-Planning-and-Control/blob/main/results/state_estimation.png)
