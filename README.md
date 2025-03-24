@@ -1,2 +1,2 @@
-# OptimalControlTutorial
-This notebook is a simple introduction to optimal control concepts from LQR to MPC to MPC-CBF, that are used in autonomous robots. This tutorial also acts as an introduction to Casadi, explaining concepts in simple everyday language.
+# A peak into Robot Planning and Control
+This notebook is a simple introduction to planning and control algorithms used in robotics. We start with state estimation (which is not planning or control, but is a prerequisite if you need to make your robot autonomous), and then explore grid based planners like A*, UCS etc. We then put a PID controller on it to make the robot follow the planned waypoints. Later we dive into sampling based planning algorithms and then explore optimal control concepts from QP to MPC to MPC-CBF, that are used in autonomous robots. This is an introductory tutorial that also introduces libraries like cvxpy and Casadi.
