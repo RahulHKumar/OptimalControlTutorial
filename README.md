@@ -11,3 +11,7 @@ Algorithms implemented:
 - [ ] Unscented Kalman Filter
 
 ![alt text](https://github.com/RahulHKumar/Robot-Planning-and-Control/blob/main/results/state_estimation.png)
+
+## Chapter 2: Grid based planning and PID controller
+
+Grid-based path planning algorithms can be used to search over a discretized map to find a path from start to goal. Algorithms like **A\***, **UCS**, **Greedy Search**, and **BFS** differ only in their **priority function** used for node expansion. This function combines factors like **path cost (g)**, **heuristic (h)**, or **depth**, e.g., A\* uses \( g + h \), UCS uses \( g \), Greedy uses \( h \), and BFS uses node depth.
